@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Order API</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Create Order API</h1>
+    
+
+    <h2> Hotel (name/city/state/id) </h2>
+
+    <ul class="hotels">
+        <!-- Loop through hotels -->
+        <% for(var i = 0; i < hotels.length; i++) {%>
+            <li class="quote">
+            <span><%= hotels[i].name %></span>:
+            <span><%= hotels[i].city %></span>:
+            <span><%= hotels[i].state %></span>:
+            <span><%= hotels[i]._id %></span>:
+            </li>
+        <% } %>
+    </ul>
+
+    <h2> Rooms (name/type/status/hotel name) </h2>
+
+    <ul class="rooms">
+        <!-- Loop through hotels -->
+        <% for(var i = 0; i < rooms.length; i++) {%>
+            <li class="quote">
+            <span><%= rooms[i].name %></span>:
+            <span><%= rooms[i].type %></span>:
+            <span><%= rooms[i].status %></span>:
+            <span><%= rooms[i].hotelName %></span>:
+            </li>
+        <% } %>
+    </ul>
+</body>
+</html>

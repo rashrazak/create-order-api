@@ -1,0 +1,28 @@
+{
+  "name": "createorderapi",
+  "version": "1.0.0",
+  "description": "Air Asia programming test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "keywords": [
+    "Air",
+    "Asia",
+    "Create",
+    "Order",
+    "API"
+  ],
+  "author": "Rashdan Razak",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.0"
+  }
+}
